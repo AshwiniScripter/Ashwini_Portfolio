@@ -1,4 +1,5 @@
-<div style="text-align: center;">
+<html>
+    <div style="text-align: center;">
     <h1>Welcome to My GitHub Portfolio!</h1>
     <p>Hi, I'm Ashwini, a passionate developer specialized in web technologies.</p>
 </div>
@@ -16,3 +17,5 @@
 
 <h2>Contact Me</h2>
 <p>If you'd like to connect, feel free to reach out via ashwinisalunke685@gmail.com</p>
+
+</html>
