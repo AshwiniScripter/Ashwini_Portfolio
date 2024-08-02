@@ -16,27 +16,3 @@
 
 <h2>Contact Me</h2>
 <p>If you'd like to connect, feel free to reach out via ashwinisalunke685@gmail.com</p>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
-    h1, h2 {
-        color: #333;
-    }
-    a {
-        color: #0073e6;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    .project-card {
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .project-card:hover {
-        transform: translateY(-5px);
-        transition: 0.3s ease-in-out;
-    }
-</style>
