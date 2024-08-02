@@ -15,4 +15,4 @@
 </ul>
 
 <h2>Contact Me</h2>
-<p>If you'd like to connect, feel free to reach out via ashwinisalunke685@gmail.com.com</p>
+<p>If you'd like to connect, feel free to reach out via ashwinisalunke685@gmail.com</p>
