@@ -15,4 +15,4 @@
 </ul>
 
 <h2>Contact Me</h2>
-<p>If you'd like to connect, feel free to reach out via <a href="mailto:your-email@example.com">email</a>.</p>
+<p>If you'd like to connect, feel free to reach out via <a href="ashwinisalunke685@gmail.com.com">email</a>.</p>
