@@ -6,7 +6,6 @@ Hello! I'm Ashwini, a passionate web developer with a background in computer tec
 
 ## Skills
 - **Languages**: HTML, CSS, JavaScript, PHP, Java
-- **Frameworks**: React, Node.js, Bootstrap, Laravel
-- **Databases**: MySQL, PostgreSQL
-- **Tools**: Git, GitHub, VS Code, Postman
-- **Other**: Data Structures & Algorithms, RESTful APIs, Responsive Design
+- **Frameworks**: Bootstrap
+- **Databases**: MySQL
+- **Tools**: Git, GitHub, VS Code
