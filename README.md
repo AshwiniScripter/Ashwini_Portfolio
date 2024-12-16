@@ -1,21 +1,7 @@
-<html>
-    <div style="text-align: center;">
-    <h1>Welcome to My GitHub Portfolio!</h1>
-    <p>Hi, I'm Ashwini, a passionate developer specialized in web technologies.</p>
-</div>
+# Ashwini's Portfolio
 
-<h2>About Me</h2>
-<p>I'm a recent graduate with a diploma in Computer Technology, skilled in HTML, CSS, PHP, and PDO. I love creating web applications and exploring new technologies.</p>
+## Introduction
 
-<h2>Skills</h2>
-<ul style="list-style-type: none; padding: 0;">
-    <li style="background-color: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px;">HTML & CSS</li>
-    <li style="background-color: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px;">JavaScript & jQuery</li>
-    <li style="background-color: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px;">PHP & PDO</li>
-    <li style="background-color: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px;">MySQL</li>
-</ul>
+Hello! I'm Ashwini, a passionate web developer with a background in computer technology. I specialize in front-end and back-end development, with a strong focus on HTML, CSS, JavaScript, and PHP. I'm constantly learning and improving my skills to create impactful and efficient web solutions.
 
-<h2>Contact Me</h2>
-<p>If you'd like to connect, feel free to reach out via ashwinisalunke685@gmail.com</p>
-
-</html>
+## Skills
