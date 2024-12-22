@@ -20,7 +20,7 @@ Hello! I'm Ashwini, a passionate web developer with a background in computer tec
 ## Education
 
 - **Diploma in Computer Technology**
-  K K Wagh Polytechnic Nashik
+  K K Wagh Polytechnic Nashik 
 
 ## Contact Me
 
