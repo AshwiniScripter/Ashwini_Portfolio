@@ -26,4 +26,3 @@ Hello! I'm Ashwini, a passionate web developer with a background in computer tec
 
 - **LinkedIn**: https://www.linkedin.com/in/ashwini-salunke-8b0704320/
 - **Email**: ashwinisalunke205@gmail.com
-- **GitHub**: https://github.com/AshwiniScripter
