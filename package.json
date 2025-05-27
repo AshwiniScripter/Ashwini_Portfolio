@@ -1,5 +1,6 @@
 {
   "name": "ashwini-portfolio",
+  "homepage": "https://ashwiniscripter.github.io/Ashwini_Portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,7 +22,6 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.0.0",
     "gh": "^2.8.9",
-    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-calendar-heatmap": "^1.9.0",
     "react-chartjs-2": "^5.3.0",
