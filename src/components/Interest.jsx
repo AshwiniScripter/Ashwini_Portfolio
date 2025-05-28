@@ -36,9 +36,7 @@ const Interest = () => {
   const interests = [
     { image: ashwiniTravel, label: 'Traveling' },
     { image: ashwiniBook, label: 'Reading' },
-    { image: ashwiniMusic, label: 'Music' },
     { image: ashwiniWriting, label: 'Writing' },
-    { image: ashwiniCamera, label: 'Photography' },
     { image: ashwiniCode, label: 'Coding' },
   ];
 
