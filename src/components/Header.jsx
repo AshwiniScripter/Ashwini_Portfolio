@@ -19,7 +19,7 @@ const Header = () => {
     <header className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backImage})` }}>
       <div className="flex flex-col lg:grid lg:grid-cols-2 items-center h-full bg-black bg-opacity-50 px-4 sm:px-8 md:px-12 lg:px-16">
         {/* Left Section */}
-        <div className="flex flex-col items-center justify-center text-white text-center mt-[80px]">
+        <div className="flex flex-col items-center justify-center text-white text-center mt-[80px] lg:items-center lg:justify-center lg:text-center lg:mt-0">
           {/* Profile Image */}
           <img
             src={ashwiniImage}
