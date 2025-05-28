@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
         
         {/* Contact Information Section */}
-        <div className="w-full md:w-1/2 h-auto rounded-3xl mx-[80px] mt-[80px] shadow-lg p-6 border bg-gray-900 border-gray-600 flex flex-col items-center max-w-[400px]">
+        <div className="w-full md:w-1/2 h-auto rounded-3xl mx-4 ms-[120px] mt-[80px] shadow-lg p-6 border bg-gray-900 border-gray-600 flex  flex-col items-center max-w-[400px]">
           <h1 className="text-2xl font-semibold text-center mb-6">ASHWINI SALUNKE</h1>
 
           {/* Email Section */}

@@ -79,7 +79,7 @@ const Cards = () => {
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="w-full bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-300 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-white"
+          className="w-full bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-300 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gray-800 hover:border-white"
         >
           <div className="flex justify-center pt-6">{card.icon}</div>
           <div className="p-4 sm:p-6">
