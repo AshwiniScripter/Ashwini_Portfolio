@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ashwiniTravel from '../images/travel.jpeg';
 import ashwiniBook from '../images/book.jpeg';
-import ashwiniMusic from '../images/music.jpeg';
+// import ashwiniMusic from '../images/music.jpeg';
 import ashwiniWriting from '../images/writing.jpeg';
-import ashwiniCamera from '../images/camera1.jpeg';
+// import ashwiniCamera from '../images/camera1.jpeg';
 import ashwiniCode from '../images/coding.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
