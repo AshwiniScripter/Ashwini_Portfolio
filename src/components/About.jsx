@@ -118,8 +118,7 @@ const About = () => {
       </h2>
 
       {/* Grid Layout for Interest and Activities */}
-      <div className="mt-6 px-4 sm:px-8 md:px-16 lg:px-24 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {/* <Activities /> */}
+      <div className="mt-6 px-4 sm:px-8 md:px-16 lg:px-24 flex justify-center">
         <Interest />
       </div>
     </section>

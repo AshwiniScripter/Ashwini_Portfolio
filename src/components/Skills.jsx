@@ -46,7 +46,11 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-2 bg-gray-800 overflow-hidden">
-      <h2 className="text-3xl font-semibold text-center text-white">Skills</h2>
+      {/* <h2 className="text-3xl font-semibold text-center text-white">Skills</h2> */}
+      <h2 className="text-3xl font-semibold text-white text-center mb-8 mt-5">
+          Skills
+          <div className="w-16 h-1 bg-yellow-400 mx-auto mt-2"></div>
+      </h2>
       <div className="mt-8 w-full overflow-hidden relative">
         <div ref={containerRef} className="flex gap-5 w-max">
           {/* Combine original and duplicated items into one array */}

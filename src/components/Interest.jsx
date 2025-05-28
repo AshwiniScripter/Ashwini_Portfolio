@@ -3,9 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ashwiniTravel from '../images/travel.jpeg';
 import ashwiniBook from '../images/book.jpeg';
-// import ashwiniMusic from '../images/music.jpeg';
 import ashwiniWriting from '../images/writing.jpeg';
-// import ashwiniCamera from '../images/camera1.jpeg';
 import ashwiniCode from '../images/coding.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,10 +40,10 @@ const Interest = () => {
 
   const circleSize = 150;
   const gap = 230;
+  const containerWidth = circleSize + gap * (interests.length - 1); // Total width
 
   return (
     <>
-      {/* Responsive CSS for mobile stacking */}
       <section id="interest">
         <style>{`
           @media (max-width: 640px) {
@@ -67,33 +65,35 @@ const Interest = () => {
           }
         `}</style>
 
-        <div
-          ref={containerRef}
-          className="interest-container relative h-[200px] mx-auto"
-          style={{
-            width: circleSize + gap * (interests.length - 1),
-            position: 'relative',
-          }}
-        >
-          {interests.map((item, index) => (
-            <div
-              key={index}
-              className="interest-item flex flex-col items-center absolute"
-              style={{
-                top: 0,
-                left: index * gap,
-                zIndex: interests.length - index,
-              }}
-            >
+        {/* THIS WRAPS AND CENTERS THE CONTAINER */}
+        <div className="w-full flex justify-center">
+          <div
+            ref={containerRef}
+            className="interest-container relative h-[200px]"
+            style={{
+              width: `${containerWidth}px`,
+            }}
+          >
+            {interests.map((item, index) => (
               <div
-                className="h-[150px] w-[150px] rounded-full bg-cover border-2 bg-center transform transition duration-300 hover:scale-105 hover:shadow-lg"
-                style={{ backgroundImage: `url(${item.image})` }}
-              ></div>
-              <div className="mt-2 text-white font-semibold text-lg text-center">
-                {item.label}
+                key={index}
+                className="interest-item flex flex-col items-center absolute"
+                style={{
+                  top: 0,
+                  left: index * gap,
+                  zIndex: interests.length - index,
+                }}
+              >
+                <div
+                  className="h-[150px] w-[150px] rounded-full bg-cover border-2 bg-center transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                ></div>
+                <div className="mt-2 text-white font-semibold text-lg text-center">
+                  {item.label}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </>
