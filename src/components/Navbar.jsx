@@ -45,11 +45,11 @@ const Navbar = () => {
         </div>
 
         {/* Right side: Projects tab */}
-        <div className="w-1/6 hidden md:flex justify-end">
+        {/* <div className="w-1/6 hidden md:flex justify-end">
           <a href="#projects" className="text-white hover:text-yellow-300 text-xl">
             Projects
           </a>
-        </div>
+        </div> */}
 
         {/* Mobile menu button with name on left */}
         <div className="md:hidden flex items-center ml-auto space-x-24">
