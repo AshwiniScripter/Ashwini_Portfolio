@@ -1,16 +1,56 @@
-import React from 'react';
-import { FaEnvelope, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaEnvelope, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!name || !email || !msg) {
+      alert("Please fill all the fields");
+      return;
+    }
+
+    setResult("Sending...");
+
+    const formData = new FormData();
+    formData.append("access_key", "ef21ebc7-b74a-4ea6-88c6-e1fb500d79f8");
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", msg);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMsg("");
+      } else {
+        setResult("Failed to send: " + data.message);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setResult("An error occurred while sending your message.");
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-800 text-white px-4 sm:px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
-        
-        {/* Contact Information Section */}
+        {/* Contact Info */}
         <div className="w-full md:w-1/2 h-auto rounded-3xl md:mx-[80px] mt-[40px] md:mt-[80px] shadow-lg p-6 border bg-gray-900 border-gray-600 flex flex-col items-center max-w-full sm:max-w-[400px]">
           <h1 className="text-2xl font-semibold text-center mb-6">ASHWINI SALUNKE</h1>
-
-          {/* Email Section */}
           <div className="grid grid-cols-[40px_1fr] sm:grid-cols-[60px_1fr] gap-4 items-center mb-6 bg-gray-800 p-4 rounded-lg w-full">
             <div className="flex justify-center items-center">
               <FaEnvelope className="text-yellow-400 text-2xl sm:text-3xl" />
@@ -20,8 +60,6 @@ const Contact = () => {
               <p className="text-white text-base sm:text-lg break-words">ashwinisalunke205@gmail.com</p>
             </div>
           </div>
-
-          {/* Birthday Section */}
           <div className="grid grid-cols-[40px_1fr] sm:grid-cols-[60px_1fr] gap-4 items-center mb-6 bg-gray-800 p-4 rounded-lg w-full">
             <div className="flex justify-center items-center">
               <FaCalendarAlt className="text-yellow-400 text-2xl sm:text-3xl" />
@@ -31,8 +69,6 @@ const Contact = () => {
               <p className="text-white text-base sm:text-lg">29 JUNE 2005</p>
             </div>
           </div>
-
-          {/* Location Section */}
           <div className="grid grid-cols-[40px_1fr] sm:grid-cols-[60px_1fr] gap-4 items-center mb-6 bg-gray-800 p-4 rounded-lg w-full">
             <div className="flex justify-center items-center">
               <FaMapMarkerAlt className="text-yellow-400 text-2xl sm:text-3xl" />
@@ -44,18 +80,25 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form Section */}
+        {/* Contact Form */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center w-full max-w-full sm:max-w-[500px]">
             <p className="text-base sm:text-lg text-white mb-8">
               If you have any questions or would like to get in touch, feel free to send me a message.
             </p>
-            <form className="space-y-6 flex flex-col items-center w-full">
+
+            {result && (
+              <p className="text-green-400 font-semibold text-center mb-4">{result}</p>
+            )}
+
+            <form onSubmit={onSubmit} className="space-y-6 flex flex-col items-center w-full">
               <div className="w-full">
                 <input
                   type="text"
                   placeholder="Enter Your Name"
                   className="w-full p-4 text-black rounded-2xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="w-full">
@@ -63,6 +106,8 @@ const Contact = () => {
                   type="email"
                   placeholder="Enter Your Email"
                   className="w-full p-4 text-black rounded-2xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="w-full">
@@ -70,7 +115,9 @@ const Contact = () => {
                   placeholder="Enter Your Message"
                   className="w-full p-4 text-black rounded-2xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"
                   rows="5"
-                ></textarea>
+                  value={msg}
+                  onChange={(e) => setMsg(e.target.value)}
+                />
               </div>
               <div className="w-full">
                 <button

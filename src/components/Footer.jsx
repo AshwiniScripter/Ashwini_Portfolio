@@ -36,7 +36,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/ashwini_salunke29/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
