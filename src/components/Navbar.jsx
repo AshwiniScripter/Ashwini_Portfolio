@@ -118,13 +118,13 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <a
+          {/* <a
             href="#projects"
             className="block px-4 py-2 text-white hover:bg-gray-700 text-xl"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
-          </a>
+          </a> */}
         </div>
       )}
     </nav>
