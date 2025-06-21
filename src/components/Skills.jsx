@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       category: "Database & Backend",
-      items: ["MySQL", "PDO"],
+      items: ["MySQL"],
     },
     {
       category: "Tools & Platforms",
