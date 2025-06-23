@@ -8,11 +8,11 @@ const Skills = () => {
   const skills = [
     {
       category: "Programming Languages",
-      items: ["HTML", "CSS", "JavaScript", "Java", "PHP"],
+      items: ["HTML","React", "CSS", "JavaScript", "Java", "PHP"],
     },
     {
       category: "Frameworks & Libraries",
-      items: ["React", "Tailwind CSS", "GSAP", "Bootstrap"],
+      items: [ "Tailwind CSS", "GSAP", "Bootstrap"],
     },
     {
       category: "Database & Backend",
