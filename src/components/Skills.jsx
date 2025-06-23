@@ -36,10 +36,10 @@ const Skills = () => {
       container,
       { x: 0 },
       {
-        x: "-50%", // Scroll halfway for a seamless loop
+        x: "-50%", 
         duration: 20,
         ease: "linear",
-        repeat: -1, // Infinite loop
+        repeat: -1, 
       }
     );
   }, []);
