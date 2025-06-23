@@ -29,8 +29,8 @@ const FirstDiv = () => {
             <FaCalendarAlt className="text-yellow-400 text-xl" />
         </div>
         <div>
-          <h2 className="text-sm font-bold text-gray-400">BIRTHDAY</h2>
-          <p className="text-white text-sm">29 JUNE 2005</p>
+          <h2 className="text-sm font-bold text-gray-400">Tech Goal</h2>
+          <p className="text-white text-sm">Exploring Computer Networking</p>
         </div>
       </div>
 
