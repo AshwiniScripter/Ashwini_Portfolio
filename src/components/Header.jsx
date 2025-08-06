@@ -34,7 +34,7 @@ const Header = () => {
 
           {/* Subheading */}
           <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-            A passionate Web Developer | Networking | Cloud Enthusiast
+          Web Developer | Networking | CyberSecurity Enthusiast
           </p>
 
           {/* Description */}

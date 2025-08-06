@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaCalendarAlt, FaMapMarkerAlt,FaBullseye  } from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -62,11 +62,11 @@ const Contact = () => {
           </div>
           <div className="grid grid-cols-[40px_1fr] sm:grid-cols-[60px_1fr] gap-4 items-center mb-6 bg-gray-800 p-4 rounded-lg w-full">
             <div className="flex justify-center items-center">
-              <FaCalendarAlt className="text-yellow-400 text-2xl sm:text-3xl" />
+              <FaBullseye  className="text-yellow-400 text-2xl sm:text-3xl" />
             </div>
             <div>
-              <h2 className="text-base sm:text-lg font-bold text-gray-400">BIRTHDAY</h2>
-              <p className="text-white text-base sm:text-lg">29 JUNE 2005</p>
+              <h2 className="text-base sm:text-lg font-bold text-gray-400">Tech Goal</h2>
+              <p className="text-white text-base sm:text-lg">Exploring Computer Networks and Cyber security</p>
             </div>
           </div>
           <div className="grid grid-cols-[40px_1fr] sm:grid-cols-[60px_1fr] gap-4 items-center mb-6 bg-gray-800 p-4 rounded-lg w-full">

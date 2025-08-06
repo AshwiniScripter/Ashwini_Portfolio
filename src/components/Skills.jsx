@@ -1,4 +1,4 @@
-// Skills.jsx
+
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
